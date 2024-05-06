@@ -1,0 +1,106 @@
+
+/* Header styles */
+.header {
+    background-color:  #e72929; /* Aesthetic background color */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Add padding for spacing */
+    border-bottom: 2px solid #fff; /* Add white border at the bottom */
+    text-align: center; /* Center align header content */
+}
+
+/* Container styles */
+.container {
+    margin: 20px auto 0; /* Center the container horizontally and add space from the top */
+    max-width: 1200px; /* Set maximum width for the container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+}
+
+
+/* Logo styles */
+.logo {
+    font-weight: bold;
+    color: #333; /* Dark color for the logo */
+    text-decoration: none; /* Remove underline from logo */
+    font-size: 24px; /* Adjust font size for better readability */
+}
+
+/* Navigation styles */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Add some space between list items */
+}
+
+/* Link styles */
+nav ul li a {
+    padding: 10px 20px; /* Increase padding for better clickability */
+    color: #333; /* Dark color for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover styles */
+nav ul li a:hover {
+    background-color: #e72929; /* Dark red background on hover */
+    color: #fff; /* White text color on hover */
+    cursor: pointer;
+}
+
+/* Styles for span elements */
+a span {
+    background: #ff4d4d;
+    color: white;
+    padding: 0.25rem 0.5rem; /* Adjust padding for better appearance */
+    border-radius: 20px; /* Rounder border for the span */
+    font-size: 0.8rem; /* Adjust font size for better fit */
+}
+
+/* Menu container styles */
+.menu-container {
+    position: relative;
+}
+
+/* Menu styles */
+.menu {
+    position: absolute;
+    z-index: 1;
+    background: #fff; /* White background for the menu */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    display: none; /* Initially hidden */
+    top: 100%; /* Position the menu below the parent */
+    left: 0; /* Align the menu with the left edge of the parent */
+    min-width: 160px; /* Set a minimum width for the menu */
+    border-radius: 5px; /* Rounded corners for the menu */
+}
+
+/* Show menu on hover */
+.menu-container:hover .menu {
+    display: block;
+}
+
+/* Styles for menu links */
+.menu a {
+    display: block; /* Display links as block elements */
+    padding: 10px 20px; /* Adjust padding for better appearance */
+    color: #333; /* Dark color for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover styles for menu links */
+.menu a:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+.logo:hover {
+    color: #fff; /* White color for the logo on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, color 0.3s;
+}

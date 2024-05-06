@@ -1,0 +1,28 @@
+<header style="background-color:  #e72929; color: #fff; padding: 20px 0; border-bottom: 2px solid #fff; text-align: center;">
+    <div class="container">
+            <a routerLink="/" class="logo">Food App</a>
+            <nav>
+                <ul>
+                    <li *ngIf="isAuth.length === 0; else elseBlock">
+                        <a routerLink="/login">Login</a></li>
+                    <ng-template #elseBlock>
+                        <li  class="menu-container">
+                            <a routerLink="/dashboard">{{user.name}}</a>
+                            <div class="menu">
+                                <a routerLink="/profile">Profile</a>
+                                <a routerLink="/orders">Orders</a>
+                                <a (click)="logout()">Logout</a>
+                            </div>
+                        </li>
+                    </ng-template>
+                    
+                    <li>
+                        <a routerLink="/cart-page">Cart 
+                            <span *ngIf="cartQuantity">{{cartQuantity}}</span>
+                    </a>
+                </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
